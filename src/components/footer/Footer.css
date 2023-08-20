@@ -1,0 +1,116 @@
+footer {
+  background-color: #0f172a;
+  height: 20rem;
+  width: 100%;
+  display: flex;
+}
+
+/*//////////////////////////////////////////////*/
+
+.category {
+  flex: 0.9;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-right: 1px solid #ffffff;
+}
+.category h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-family: "Sora", sans-serif;
+}
+
+.category ul li {
+  margin: 0.822rem;
+}
+
+.category ul li a {
+  font-family: 1.1rem;
+  color: #a8a29e;
+  padding: 1px 15px;
+}
+
+.category ul li a:hover {
+  padding: 1px 15px;
+  box-shadow: -2px 2px 8px #c45656;
+}
+
+/*///////////////////////////////////////////////////////*/
+.about {
+  flex: 0.9;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-right: 1px solid #ffffff;
+}
+
+.about h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-family: "Sora", sans-serif;
+}
+
+.about ul li {
+  margin: 0.822rem;
+}
+
+.about ul li a {
+  font-family: 1.1rem;
+  color: #a8a29e;
+  padding: 1px 15px;
+}
+
+.about ul li a:hover {
+  padding: 1px 15px;
+  box-shadow: -2px 2px 8px #c45656;
+}
+
+/*//////////////////////////////////////////////////////*/
+.newsletter {
+  flex: 1.2;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.newsletter h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-family: "Sora", sans-serif;
+}
+
+.content-input p {
+  font-family: "Sora", sans-serif;
+  color: #a8a29e;
+  font-size: 0.825rem;
+  margin-bottom: 0.4rem;
+}
+
+.newsletter input {
+  height: 35px;
+  width: 15rem;
+  margin-right: 1rem;
+  padding: 1px 2px;
+  font-family: "Sora", sans-serif;
+}
+
+.content-input button {
+  padding: 8px 24px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Sora", sans-serif;
+  background-color: #d34040;
+  border: 1px solid #d34040;
+  transition: background-color 0.8s;
+  width: 10rem;
+  height: 36px;
+  box-shadow: 2px 2px 4px #000000;
+  cursor: pointer;
+}
+
+.content-input button:hover {
+  background-color: transparent;
+}

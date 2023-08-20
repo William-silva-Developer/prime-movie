@@ -1,0 +1,65 @@
+.card {
+  background-color: transparent;
+  flex: 1;
+  max-width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-films {
+  background-color: #374151;
+  display: inline-flex;
+  flex-direction: column;
+  width: 270px;
+  height: 400px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: -2px 2px 8px #ffffff;
+}
+
+.img {
+  max-width: 100%;
+  object-fit: fill;
+  height: 250px;
+}
+
+.cards-films div {
+  flex: 1;
+  align-items: flex-start;
+  padding: 0.8rem;
+}
+
+.cards-films p {
+  color: #a8a29e;
+  font-size: small;
+}
+.cards-films h3 {
+  color: #ffffff;
+  font-weight: bolder;
+  font-family: "Sora", sans-serif;
+}
+
+.comments {
+  background-color: transparent;
+  flex: 1;
+  border-top: 0.1px solid #222;
+  display: flex;
+}
+
+.comments span {
+  align-self: flex-end;
+  font-size: smaller;
+  color: #a8a29e;
+  margin: 0 1px;
+  font-family: "Sora", sans-serif;
+}
+
+.comments .span-count {
+  font-size: smaller;
+  color: #ffffff;
+  font-family: "Sora", sans-serif;
+}

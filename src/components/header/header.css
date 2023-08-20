@@ -1,0 +1,109 @@
+header {
+    display: block;
+   /* background-color: #312e81;*/
+    width: 100%;
+    height: 80vh;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    
+}
+header::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../../assets/clapper-board.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 65vh;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+}
+
+ .logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.logo nav {
+    background-color: transparent;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.menu {
+    background-color: #222;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.title {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+.title h1 {
+    font-size: 6rem;
+    flex-wrap: wrap;
+    font-family: 'Sora', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #a5b4fc;
+    text-shadow: 2px 8px 4px #000000;
+}
+.title div {
+    display: block;
+}
+
+.title  p {
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 100;
+}
+.btn {
+    padding: 8px 24px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Sora', sans-serif;
+    background-color: #d34040;
+    border: 1px solid #d34040;
+    transition: background-color 0.8s;
+    width: 25rem;
+    height: 3rem;
+    box-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+}
+
+.btn:hover {
+
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
