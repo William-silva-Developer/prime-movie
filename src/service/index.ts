@@ -1,11 +1,10 @@
 import axios from "axios";
 
-
-//https://api.themoviedb.org/3/movie/now_playing?api_key=
-
+//https://api.themoviedb.org/3/movie/now_playing?api_key=882912fe9d652cd4f85d0b891f794e4a
+//https://api.themoviedb.org/3/movie/667538id?api_key=882912fe9d652cd4f85d0b891f794e4a
 
 const api = axios.create({
-    baseURL: 'https://api.themoviedb.org/3'
+  baseURL: "https://api.themoviedb.org/3",
 });
 
 export { api };

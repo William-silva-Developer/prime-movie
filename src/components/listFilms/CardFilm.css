@@ -63,3 +63,18 @@
   color: #ffffff;
   font-family: "Sora", sans-serif;
 }
+
+.button-datails {
+  background-color: rgb(235, 125, 22);
+  width: 10rem;
+  height: 35px;
+  margin-left: 5%;
+  transition: background-color 0.8s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.button-datails:hover {
+  background-color: #bd1b1b;
+}

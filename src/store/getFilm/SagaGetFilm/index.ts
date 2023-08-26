@@ -6,14 +6,13 @@ import {
   getFilmsSuccess,
   getFilmsTimeout,
 } from "../getFilmSlice";
-import { showFilm } from "../../showFilms/ShowFilmsSlice";
 
 function* getFilms() {
   try {
     const { res, timout } = yield race({
       res: call(api.get, "/movie/now_playing?", {
         params: {
-          api_key: process.env.REACT_APP_API_KEY,
+          api_key: "882912fe9d652cd4f85d0b891f794e4a",
           language: "pt-BR",
           page: 1,
         },
@@ -33,8 +32,7 @@ function* getFilms() {
     }
 
     if (res.data) {
-      yield put(showFilm(res.data.results));
-      yield put(getFilmsSuccess());
+      yield put(getFilmsSuccess(res.data.results));
     }
   } catch (error: any) {
     yield put(getFilmsFailure());

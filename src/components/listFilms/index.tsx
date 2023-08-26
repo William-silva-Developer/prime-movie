@@ -4,9 +4,12 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../store/rootReducer";
 
 import "./CardFilm.css";
+import { Link } from "react-router-dom";
 
 function CardFilms() {
-  const films = useSelector((state: RootState) => state.showFilms.results);
+  const films = useSelector(
+    (state: RootState) => state.films.results.ObjctFilms
+  );
 
   return (
     <section className=" card">
@@ -26,6 +29,9 @@ function CardFilms() {
               </p>
               <h3>{item?.title}</h3>
             </div>
+            <Link className="button-datails" to={`/filme/${item.id}`}>
+              Saiba mais
+            </Link>
             <div className="comments">
               <span>Comments </span>
               <span className="span-count"> ({item?.vote_count})</span>

@@ -7,7 +7,6 @@ import { useSelector, useDispatch } from "react-redux";
 
 import "./Home.css";
 import { getFilms } from "../../../store/getFilm/getFilmSlice";
-import { ParamsFilms } from "../../../store/showFilms/ShowFilmsSlice";
 import { Link } from "react-router-dom";
 import { CardFilms } from "../../../components/listFilms";
 
@@ -17,7 +16,9 @@ const Home: React.FC = () => {
   const loading = useSelector(
     (state: RootState) => state.films.results.loading
   );
-  const arrFilms = useSelector((state: RootState) => state.showFilms.results);
+  const arrFilms = useSelector(
+    (state: RootState) => state.films.results.ObjctFilms
+  );
 
   useEffect(() => {
     dispatch(getFilms());
