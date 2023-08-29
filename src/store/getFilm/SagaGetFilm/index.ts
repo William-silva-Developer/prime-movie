@@ -12,7 +12,7 @@ function* getFilms() {
     const { res, timout } = yield race({
       res: call(api.get, "/movie/now_playing?", {
         params: {
-          api_key: "882912fe9d652cd4f85d0b891f794e4a",
+          api_key: process.env.REACT_APP_API_KEY,
           language: "pt-BR",
           page: 1,
         },
